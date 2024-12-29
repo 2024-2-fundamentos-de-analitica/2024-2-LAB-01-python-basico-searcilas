@@ -17,5 +17,3 @@ def pregunta_09():
             counter.update(keys)  # Actualiza los conteos directamente
 
     return dict(sorted(counter.items()))  # Ordena el diccionario por clave
-
-print(pregunta_09())

@@ -26,4 +26,4 @@ def pregunta_06():
 
     return sorted([(clave, limites[0], limites[1]) for clave, limites in resultado.items()])
 
-print(pregunta_06())
+

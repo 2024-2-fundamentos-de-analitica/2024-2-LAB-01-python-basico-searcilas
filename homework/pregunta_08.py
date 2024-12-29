@@ -24,4 +24,3 @@ def pregunta_08():
     resultado = sorted(agrupados.items())
     return resultado
 
-print(pregunta_08())

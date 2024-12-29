@@ -33,5 +33,3 @@ def pregunta_02():
 
         result = sorted(dic.items())
     return result
-
-print(pregunta_02())

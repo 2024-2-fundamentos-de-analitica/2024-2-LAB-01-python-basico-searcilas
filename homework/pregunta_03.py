@@ -31,5 +31,5 @@ def pregunta_03():
     result = sorted(sums.items())
     return result
 
-print(pregunta_03())
+
 

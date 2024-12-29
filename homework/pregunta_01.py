@@ -15,12 +15,10 @@ def pregunta_01():
 
     """
     suma = 0
-    with open('files\input\data.csv', 'r') as file:
+    with open("files/input/data.csv", 'r') as file:
         for line in file:
             columnas = line.strip().split(',')
             numero = columnas[0].split()
             suma += int(numero[1])
 
     return suma
-
-print(pregunta_01())

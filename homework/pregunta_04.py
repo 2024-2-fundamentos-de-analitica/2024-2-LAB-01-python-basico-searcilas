@@ -33,4 +33,3 @@ def pregunta_04():
     conteo_meses = Counter(meses)  # Contar ocurrencias por mes
     return sorted(conteo_meses.items())  # Ordenar por mes
 
-print(pregunta_04())

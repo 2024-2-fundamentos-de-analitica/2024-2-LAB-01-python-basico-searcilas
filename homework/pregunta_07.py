@@ -21,5 +21,3 @@ def pregunta_07():
             diccionario[valor].append(letra)  # Añadir letra al valor correspondiente
 
     return sorted(diccionario.items())  # Ordenar por clave (valores numéricos)
-
-print(pregunta_07())
