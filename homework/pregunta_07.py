@@ -10,7 +10,7 @@ import csv
 from collections import defaultdict
 
 def pregunta_07():
-    
+
     diccionario = defaultdict(list)
 
     with open("files/input/data.csv", mode="r", encoding="utf-8") as archivo_csv:
@@ -21,3 +21,5 @@ def pregunta_07():
             diccionario[valor].append(letra)  # Añadir letra al valor correspondiente
 
     return sorted(diccionario.items())  # Ordenar por clave (valores numéricos)
+
+print(pregunta_07())

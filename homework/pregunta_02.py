@@ -34,5 +34,4 @@ def pregunta_02():
         result = sorted(dic.items())
     return result
 
-if __name__ == '__main__':
-    print(pregunta_02())   
+print(pregunta_02())

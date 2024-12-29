@@ -18,3 +18,4 @@ def pregunta_09():
 
     return dict(sorted(counter.items()))  # Ordena el diccionario por clave
 
+print(pregunta_09())

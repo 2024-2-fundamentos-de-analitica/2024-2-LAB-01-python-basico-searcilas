@@ -30,3 +30,4 @@ def pregunta_05():
 
     return sorted((letra, max_min[0], max_min[1]) for letra, max_min in letras.items())
 
+print(pregunta_05())

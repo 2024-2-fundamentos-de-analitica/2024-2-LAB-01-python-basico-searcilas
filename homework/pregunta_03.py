@@ -31,6 +31,5 @@ def pregunta_03():
     result = sorted(sums.items())
     return result
 
-if __name__ == '__main__':
-    print(pregunta_03())
+print(pregunta_03())
 
