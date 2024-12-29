@@ -9,7 +9,7 @@ utilizar pandas, numpy o scipy.
 def pregunta_08():
     agrupados = {}
 
-    with open('./files/input/data.csv', 'r') as archivo:
+    with open("files/input/data.csv", 'r') as archivo:
         for linea in archivo:
             letra, numero, *_ = linea.strip().split('\t')
             numero = int(numero)

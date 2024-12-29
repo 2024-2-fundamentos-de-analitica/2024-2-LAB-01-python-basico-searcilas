@@ -11,7 +11,7 @@ from collections import Counter
 def pregunta_09():
     counter = Counter()
 
-    with open('./files/input/data.csv', 'r') as file:
+    with open("files/input/data.csv", 'r') as file:
         for line in file:
             keys = [pair.split(':')[0] for pair in line.strip().split('\t')[4].split(',')]
             counter.update(keys)  # Actualiza los conteos directamente
