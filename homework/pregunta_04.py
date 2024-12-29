@@ -4,7 +4,8 @@ datos requeridos se encuentran en el archivo data.csv. En este laboratorio
 solo puede utilizar las funciones y librerias basicas de python. No puede
 utilizar pandas, numpy o scipy.
 """
-
+import csv
+from collections import Counter
 
 def pregunta_04():
     """
@@ -24,5 +25,10 @@ def pregunta_04():
      ('10', 2),
      ('11', 2),
      ('12', 3)]
-
     """
+    with open("files/input/data.csv", mode="r", encoding="utf-8") as archivo_csv:
+        lector_csv = csv.reader(archivo_csv, delimiter="\t")
+        meses = [fila[2][5:7] for fila in lector_csv]  # Extraer meses de las fechas
+
+    conteo_meses = Counter(meses)  # Contar ocurrencias por mes
+    return sorted(conteo_meses.items())  # Ordenar por mes

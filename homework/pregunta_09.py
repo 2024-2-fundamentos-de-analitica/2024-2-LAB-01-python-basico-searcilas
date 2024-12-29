@@ -6,21 +6,15 @@ utilizar pandas, numpy o scipy.
 """
 
 
+from collections import Counter
+
 def pregunta_09():
-    """
-    Retorne un diccionario que contenga la cantidad de registros en que
-    aparece cada clave de la columna 5.
+    counter = Counter()
 
-    Rta/
-    {'aaa': 13,
-     'bbb': 16,
-     'ccc': 23,
-     'ddd': 23,
-     'eee': 15,
-     'fff': 20,
-     'ggg': 13,
-     'hhh': 16,
-     'iii': 18,
-     'jjj': 18}}
+    with open('./files/input/data.csv', 'r') as file:
+        for line in file:
+            keys = [pair.split(':')[0] for pair in line.strip().split('\t')[4].split(',')]
+            counter.update(keys)  # Actualiza los conteos directamente
 
-    """
+    return dict(sorted(counter.items()))  # Ordena el diccionario por clave
+
